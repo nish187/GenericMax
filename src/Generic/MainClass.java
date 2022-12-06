@@ -1,13 +1,15 @@
 package Generic;
 
 public class MainClass {
-    public static void main(String[] args) {
-        MaxInt maxInt = new MaxInt();
-        System.out.println("Test case1");
-        maxInt.maxValue(7, 5, 6);
-        System.out.println("Test case2");
-        maxInt.maxValue(5, 6, 4);
-        System.out.println("Test case3");
-        maxInt.maxValue(5, 6, 8);
+
+
+        public static void main(String[] args) {
+            MaxFloat maxFloat = new MaxFloat();
+            System.out.println("Test case1");
+            maxFloat.maxValue(7.8F, 5.5F, 6.3F);
+            System.out.println("Test case2");
+            maxFloat.maxValue(5.2F, 6.3F, 4.5F);
+            System.out.println("Test case3");
+            maxFloat.maxValue(5.2F, 6.2F, 8.6F);
+        }
     }
-}
