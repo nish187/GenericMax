@@ -1,0 +1,13 @@
+package Generic;
+
+public class MaxValueGeneric {
+    public <K extends Comparable<K>> void maxValue(K val1, K val2, K val3) {
+        if ((val1.compareTo(val2)) >= 0 && (val1.compareTo(val3)) >= 0) {
+            System.out.println(val1 + " " + " is the largest");
+        } else if ((val2.compareTo(val1)) >= 0 && (val2.compareTo(val3)) >= 0) {
+            System.out.println(val2 + " " + "is the largest");
+        } else {
+            System.out.println(val3 + " " + "is the largest");
+        }
+    }
+}
